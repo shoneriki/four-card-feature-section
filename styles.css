@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,8 +30,7 @@
 
 body {
   background-color: var(--light-gray);
-  min-height: 100vh;
-  width: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -63,9 +64,10 @@ header > p {
 }
 
 .card {
+  background-color: #fff;
   border-radius: 4px;
-  padding: 28px;
   box-shadow: 0  8px 16px rgba(0, 0, 0, 0.05);
+  padding: 28px;
   position: relative;
   overflow: hidden;
   margin: 16px;
@@ -77,29 +79,48 @@ header > p {
   position: absolute;
   top: 0;
   left: 0;
-  height: 5px;
+  height: 4px;
   width: 100%;
 }
 
-.card-team-builder{
-  border-top: 4px solid var(--red);
+.card-team-builder::after{
+  background-color: var(--red);
 }
 
-.card-supervisor {
-  border-top: 4px solid var(--cyan);
+.card-supervisor::after {
+  background-color: var(--cyan);
 }
 
-.card-karma {
-  border-top: 4px solid var(--orange);
+.card-karma::after {
+  background-color: var(--orange);
 }
 
-.card-calculator {
-  border-top:4px solid var(--blue);
+.card-calculator::after {
+  background-color: var(--blue);
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 16px 0 40px;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+}
+
+.vertical {
+  transform: translateY(50%);
 }
 
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 16px; text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
