@@ -9,33 +9,12 @@
   --cyan: hsl(180, 62%, 55%);
   --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
+  --dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
 }
 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
-- Orange: hsl(34, 97%, 64%)
-- Blue: hsl(212, 86%, 64%)
-
-### Neutral
-
-- Very Dark Blue: hsl(234, 12%, 34%)
-- Grayish Blue: hsl(229, 6%, 66%)
-- Very Light Gray: hsl(0, 0%, 98%)
-
-## Typography
+/* ## Typography
 
 ### Body Copy
 
@@ -44,36 +23,39 @@ The designs were created to the following widths:
 ### Fonts
 
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 200, 400, 600
+- Weights: 200, 400, 600 */
 
 
 body {
+  background-color: var(--light-gray);
   min-height: 100vh;
   width: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
 }
 
 header {
   margin: 50px auto;
-  /* border: 4px solid black; */
-  max-width: 400px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
+  max-width: 376px;
   text-align: center;
+}
 
+h1 {
+  margin: 0;
+}
+
+span {
+  font-size: 24px;
 }
 
 header > p {
-  text-align: center;
+  text-align: left;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1140px;
 }
 
 .card {
@@ -82,19 +64,19 @@ header > p {
   box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
-.red {
+.card-team-builder {
   border-top: 4px solid var(--red);
 }
 
-.cyan {
+.card-supervisor {
   border-top: 4px solid var(--cyan);
 }
 
-.orange {
+.card-karma {
   border-top: 4px solid var(--orange);
 }
 
-.blue {
+.card-calculator {
   border-top:4px solid var(--blue);
 }
 
