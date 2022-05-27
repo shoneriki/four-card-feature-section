@@ -34,20 +34,24 @@ body {
 
 header {
   margin: 50px auto;
-  max-width: 376px;
+  max-width: 484px;
   text-align: center;
 }
 
 h1 {
+  font-weight: 200;
   margin: 0;
 }
 
 span {
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 600;
 }
 
 header > p {
-  text-align: left;
+  text-align: center;
+  padding: 0px 4px;
+  color: var(--grayish-blue);
 }
 
 .container {
@@ -60,11 +64,24 @@ header > p {
 
 .card {
   border-radius: 4px;
-  padding: 16px 32px;
-  box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
+  padding: 28px;
+  box-shadow: 0  8px 16px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  margin: 16px;
+  width: 352px;
 }
 
-.card-team-builder {
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.card-team-builder{
   border-top: 4px solid var(--red);
 }
 
