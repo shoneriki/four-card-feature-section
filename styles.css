@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -15,18 +13,6 @@
   --grayish-blue: hsl(229, 6%, 66%);
   --light-gray: hsl(0, 0%, 98%);
 }
-
-/* ## Typography
-
-### Body Copy
-
-- Font size: 15px
-
-### Fonts
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 200, 400, 600 */
-
 
 body {
   background-color: var(--light-gray);
@@ -49,10 +35,13 @@ span {
   font-weight: 600;
 }
 
+p {
+  text-align: left;
+  color: var(--grayish-blue);
+}
+
 header > p {
   text-align: center;
-  padding: 0px 4px;
-  color: var(--grayish-blue);
 }
 
 .container {
@@ -63,10 +52,10 @@ header > p {
   max-width: 1140px;
 }
 
-.card {
+.box {
   background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
-  box-shadow: 0  8px 16px rgba(0, 0, 0, 0.05);
   padding: 28px;
   position: relative;
   overflow: hidden;
@@ -74,7 +63,7 @@ header > p {
   width: 352px;
 }
 
-.card::after {
+.box::after {
   content: '';
   position: absolute;
   top: 0;
@@ -83,48 +72,51 @@ header > p {
   width: 100%;
 }
 
-.card-team-builder::after{
+.box-team-builder::after{
   background-color: var(--red);
 }
 
-.card-supervisor::after {
+.box-supervisor::after {
   background-color: var(--cyan);
 }
 
-.card-karma::after {
+.box-karma::after {
   background-color: var(--orange);
 }
 
-.card-calculator::after {
+.box-calculator::after {
   background-color: var(--blue);
 }
 
-.card h2 {
+.box h2 {
   margin: 0;
 }
 
-.card p {
+.box p {
   font-size: 16px;
   margin: 16px 0 40px;
 }
 
-.card img {
+.box img {
   display: block;
   margin-left: auto;
 }
 
-.vertical {
+.box-down {
   transform: translateY(50%);
 }
 
 .attribution {
-  font-size: 16px; text-align: center;
+  font-size: 16px;
+  text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 500px) {
-
+@media (min-width: 775px) {
+  .box-down {
+    transform: translateY(0);
+  }
 }
