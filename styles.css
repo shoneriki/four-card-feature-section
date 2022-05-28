@@ -16,9 +16,15 @@
   --light-gray: hsl(0, 0%, 98%);
 }
 
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
   background-color: var(--light-gray);
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
 }
 
 header {
@@ -52,7 +58,7 @@ header > p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1144px;
 }
 
 .card {
@@ -118,7 +124,7 @@ header > p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   h1 {
     font-size: 24px;
   }
@@ -131,6 +137,12 @@ header > p {
     padding: 0 20px;
   }
 
+  .card-down {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1144px) {
   .card-down {
     transform: translateY(0);
   }
