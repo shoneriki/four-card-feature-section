@@ -49,7 +49,7 @@ header > p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1184px;
 }
 
 .card {
@@ -103,7 +103,7 @@ header > p {
 }
 
 .card-down {
-  transform: translateY(50%);
+  transform: translateY(60%);
 }
 
 .attribution {
