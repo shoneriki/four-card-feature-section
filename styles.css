@@ -36,8 +36,8 @@ span {
 }
 
 p {
-  text-align: left;
   color: var(--grayish-blue);
+  text-align: left;
 }
 
 header > p {
@@ -52,7 +52,7 @@ header > p {
   max-width: 1140px;
 }
 
-.box {
+.card {
   background-color: #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
@@ -63,7 +63,7 @@ header > p {
   width: 352px;
 }
 
-.box::after {
+.card::after {
   content: '';
   position: absolute;
   top: 0;
@@ -72,37 +72,37 @@ header > p {
   width: 100%;
 }
 
-.box-team-builder::after{
+.card-team-builder::after{
   background-color: var(--red);
 }
 
-.box-supervisor::after {
+.card-supervisor::after {
   background-color: var(--cyan);
 }
 
-.box-karma::after {
+.card-karma::after {
   background-color: var(--orange);
 }
 
-.box-calculator::after {
+.card-calculator::after {
   background-color: var(--blue);
 }
 
-.box h2 {
+.card h2 {
   margin: 0;
 }
 
-.box p {
+.card p {
   font-size: 16px;
   margin: 16px 0 40px;
 }
 
-.box img {
+.card img {
   display: block;
   margin-left: auto;
 }
 
-.box-down {
+.card-down {
   transform: translateY(50%);
 }
 
