@@ -117,6 +117,18 @@ header > p {
 }
 
 @media (max-width: 414px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+
   .card-down {
     transform: translateY(0);
   }
