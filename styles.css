@@ -21,7 +21,7 @@ body {
 
 header {
   margin: 50px auto;
-  max-width: 484px;
+  max-width: 500px;
   text-align: center;
 }
 
@@ -38,6 +38,7 @@ span {
 p {
   color: var(--grayish-blue);
   text-align: left;
+  /* display: inline-block; */
 }
 
 header > p {
@@ -49,7 +50,7 @@ header > p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1184px;
+  max-width: 1180px;
 }
 
 .card {
@@ -107,7 +108,7 @@ header > p {
 }
 
 .attribution {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -115,8 +116,14 @@ header > p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 775px) {
-  .box-down {
+@media (max-width: 414px) {
+  .card-down {
     transform: translateY(0);
   }
 }
+
+/* @media (max-width: 720px) {
+  .box-down {
+    transform: translateY(60%);
+  }
+} */
