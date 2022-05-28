@@ -16,11 +16,6 @@
   --light-gray: hsl(0, 0%, 98%);
 }
 
-html, body {
-  margin: 0;
-  height: 100%;
-}
-
 body {
   background-color: var(--light-gray);
   font-family: 'Poppins', sans-serif;
