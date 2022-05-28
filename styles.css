@@ -60,7 +60,7 @@ header > p {
   padding: 28px;
   position: relative;
   overflow: hidden;
-  margin: 16px;
+  margin: 14px;
   width: 352px;
 }
 
@@ -116,7 +116,7 @@ header > p {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 414px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 24px;
   }
@@ -133,9 +133,3 @@ header > p {
     transform: translateY(0);
   }
 }
-
-/* @media (max-width: 720px) {
-  .box-down {
-    transform: translateY(60%);
-  }
-} */
