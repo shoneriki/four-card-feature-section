@@ -58,7 +58,7 @@ header > p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1144px;
+  /* max-width: 1144px; */
 }
 
 .card {
@@ -144,9 +144,12 @@ header > p {
   .card-down {
     transform: translateY(0);
   }
+
+  .container :nth-child(3) {order:4;}
+
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1144px) {
+@media only screen and (min-width: 768px) and (max-width: 1139px) {
 
   h1 {
     font-size: 32px;
@@ -159,6 +162,8 @@ header > p {
   header {
     padding: 0 20px;
   }
+
+  .container :nth-child(3) {order:4;}
 
 
   .card-down {
